@@ -1,13 +1,11 @@
 // udp-server.js
 const dgram = require('dgram');
-
-// krijimi i socketit per udp
 const server = dgram.createSocket('udp4');
 
-// mesazhet vijn procedura
+// pytja
 server.on('message', (msg, rinfo) => {
     console.log(`serveri morri mesazhin: '${msg}' nga '${rinfo.address}:${rinfo.port}'`);
-    // client respondi
+    // pergjigjja
     const response = Buffer.from('pershendetje nga serveri, protokoli udp');
     server.send(response, rinfo.port, rinfo.address, (error) => {
         if (error) {
@@ -21,7 +19,6 @@ server.on('message', (msg, rinfo) => {
 // socketi per server
 const PORT = 41234;
 const HOST = 'localhost';
-
 server.bind(PORT, HOST, () => {
     console.log(`socketi serverit udp: '${HOST}:${PORT}'`);
 });
