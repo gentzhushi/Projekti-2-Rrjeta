@@ -1,0 +1,43 @@
+*{
+ font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(32, 33, 36);
+}
+form{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#txt-message-field{
+    width: 100%;
+    border: none;
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 60px;
+    border-radius: 30px;
+    background-color: rgb(78, 81, 86);
+}
+h1{
+    color: white;
+    text-wrap: nowrap;
+}
+button{
+    border-radius: 100%;
+    position: absolute;
+    top: 50.3vh;
+    right: 30vw;
+    display: flex;
+    padding: 12px 20px;
+    justify-content: flex-end;
+    background: none;
+    border: none;
+}

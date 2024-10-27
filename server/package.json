@@ -1,0 +1,12 @@
+{
+  "name": "projekti-2-rrjeta",
+  "version": "1.0.0",
+  "main": "udp-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
