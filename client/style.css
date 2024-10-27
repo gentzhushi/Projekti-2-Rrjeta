@@ -40,4 +40,5 @@ button{
     justify-content: flex-end;
     background: none;
     border: none;
+    cursor: pointer;
 }
