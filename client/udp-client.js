@@ -10,7 +10,7 @@
  *  8. Të ketë qasje të plotë në folderat/përmbajtjen në server;
  *  9. Klientët me privilegje të plota të kenë kohë përgjigjeje më të shpejtë se klientët e tjerë që kanë vetëm read permission.
  */
-
+ 
 // udp-client.js
 const dgram = require('dgram');
 const client = dgram.createSocket('udp4');

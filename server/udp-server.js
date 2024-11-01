@@ -12,6 +12,9 @@
 const dgram = require('dgram');
 const server = dgram.createSocket('udp4');
 
+const HOST = 'localhost';
+const PORT = 41234;
+
 // pytja
 server.on('message', (msg, rinfo) => {
     console.log(`serveri morri mesazhin: '${msg}' nga '${rinfo.address}:${rinfo.port}'`);
@@ -27,8 +30,6 @@ server.on('message', (msg, rinfo) => {
 });
 
 // socketi per server
-const PORT = 41234;
-const HOST = 'localhost';
 server.bind(PORT, HOST, () => {
     console.log(`socketi serverit udp: '${HOST}:${PORT}'`);
 });

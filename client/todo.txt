@@ -1,0 +1,4 @@
+1. me simulu qita: echo "mesazhi" | nc -u localhost 41234
+    - 41234 -> porti qe perdoret per tcp/udp
+    - localhost -> ip remote, llgoarite qe qikjo duhet me komuniku me ni pajisje tjeter, jo me t njejtin kompjuter
+    - duhet me ardh ni mesazh si string psh echo "peci"
