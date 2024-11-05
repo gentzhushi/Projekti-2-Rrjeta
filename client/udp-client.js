@@ -12,25 +12,16 @@
  */
  
 // udp-client.js
-const dgram = require('dgram');
-const client = dgram.createSocket('udp4');
+const dgram = require('dgram')
+const rl = require('readline')
+const fileSystem = require('fs')
 
-const message = Buffer.from('ckm;)');
+const client = dgram.createSocket('udp4')
 
-const PORT = 41234;
-const HOST = 'localhost';
+const ip = 'localhost'
+const port = 41234
 
-client.send(message, PORT, HOST, (error) => {
-    if (error) {
-        console.error('error gjate mesazhit: ', error);
-        client.close();
-    } else {
-        console.log('mesazhi u dergua! C->S');
-    }
-});
-
-// pytja
-client.on('message', (msg, rinfo) => {
-    console.log(`klienti morri mesazhin: '${msg}' nga '${rinfo.address}:${rinfo.port}'`);
-    client.close();
+const readLine = rl.createInterface({
+    input: process.stdin,
+    output: process.stdout
 });
